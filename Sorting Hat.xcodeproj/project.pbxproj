@@ -14,6 +14,7 @@
 		6C9EE8CE22A05BEB00414FE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9EE8CC22A05BEB00414FE0 /* LaunchScreen.storyboard */; };
 		6C9EE8D622A05F5700414FE0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9EE8D522A05F5700414FE0 /* SecondViewController.swift */; };
 		6C9EE8D822A0658100414FE0 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9EE8D722A0658100414FE0 /* ThirdViewController.swift */; };
+		6CE0F1A222A1A8270080F6A7 /* kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0F1A122A1A8270080F6A7 /* kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6C9EE8CF22A05BEB00414FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C9EE8D522A05F5700414FE0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		6C9EE8D722A0658100414FE0 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		6CE0F1A122A1A8270080F6A7 /* kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +61,12 @@
 			isa = PBXGroup;
 			children = (
 				6C9EE8C322A05BEA00414FE0 /* AppDelegate.swift */,
-				6C9EE8C522A05BEA00414FE0 /* ViewController.swift */,
 				6C9EE8C722A05BEA00414FE0 /* Main.storyboard */,
-				6C9EE8D722A0658100414FE0 /* ThirdViewController.swift */,
+				6C9EE8C522A05BEA00414FE0 /* ViewController.swift */,
 				6C9EE8D522A05F5700414FE0 /* SecondViewController.swift */,
+				6C9EE8D722A0658100414FE0 /* ThirdViewController.swift */,
 				6C9EE8CA22A05BEB00414FE0 /* Assets.xcassets */,
+				6CE0F1A122A1A8270080F6A7 /* kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg */,
 				6C9EE8CC22A05BEB00414FE0 /* LaunchScreen.storyboard */,
 				6C9EE8CF22A05BEB00414FE0 /* Info.plist */,
 			);
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CE0F1A222A1A8270080F6A7 /* kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg in Resources */,
 				6C9EE8CE22A05BEB00414FE0 /* LaunchScreen.storyboard in Resources */,
 				6C9EE8CB22A05BEB00414FE0 /* Assets.xcassets in Resources */,
 				6C9EE8C922A05BEA00414FE0 /* Main.storyboard in Resources */,

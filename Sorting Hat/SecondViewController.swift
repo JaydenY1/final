@@ -9,6 +9,11 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    var redScore : Int = 0
+    
+    var greenScore : Int = 0
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
