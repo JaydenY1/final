@@ -23,6 +23,8 @@ class ViewController: UIViewController {
         
         self.startText.text = "\(self.start)"
         
+        //Will give a starting message
+        
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -30,6 +32,8 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: Any) {
         
         performSegue(withIdentifier: "goToSecondScreen", sender: self)
+        
+        //if the play button is pressed go to question screen
         
     }
     
