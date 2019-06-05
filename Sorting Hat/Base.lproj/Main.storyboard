@@ -53,7 +53,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5.5999999999999996" y="153.37331334332833"/>
+            <point key="canvasLocation" x="82" y="195"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="T66-6l-z9P">
@@ -63,17 +63,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8L-q9-roY">
-                                <rect key="frame" x="132" y="551" width="111" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <state key="normal" title="Results">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="ResultsPressed:" destination="kM8-4V-YI0" eventType="touchUpInside" id="s4v-G4-LUi"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TBO-mv-14v">
                                 <rect key="frame" x="67" y="43" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -131,6 +120,17 @@
                                     <action selector="buttonPressed:" destination="kM8-4V-YI0" eventType="touchUpInside" id="970-EG-vQ3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8L-q9-roY">
+                                <rect key="frame" x="137" y="565" width="124" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Results">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ResultsPressed:" destination="kM8-4V-YI0" eventType="touchUpInside" id="s4v-G4-LUi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Uc3-eW-Whz"/>
@@ -142,12 +142,15 @@
                         <outlet property="redButton" destination="pYp-Ma-9Yr" id="cfH-pP-iN0"/>
                         <outlet property="resultsButton" destination="L8L-q9-roY" id="oQZ-su-wZo"/>
                         <outlet property="yellowButton" destination="Fup-1R-e3Y" id="uB4-IZ-fbX"/>
-                        <segue destination="TuU-zy-wpA" kind="show" identifier="goToThirdScreen" id="Tfe-y4-xw5"/>
+                        <segue destination="TuU-zy-wpA" kind="show" identifier="goToThirdScreen" customClass="ThirdViewController" customModule="Sorting_Hat" customModuleProvider="target" id="CPl-XA-gE3"/>
+                        <segue destination="1Lu-9d-kIe" kind="show" identifier="goToFourthScreen" customClass="fourthViewController" customModule="Sorting_Hat" customModuleProvider="target" id="XPp-iI-EfL"/>
+                        <segue destination="dRv-bs-zqq" kind="show" identifier="goToFifthScreen" customClass="fifthViewController" customModule="Sorting_Hat" customModuleProvider="target" id="GeO-bA-9XP"/>
+                        <segue destination="kV1-7w-d8I" kind="show" identifier="goToSixthScreen" customClass="sixthViewController" customModule="Sorting_Hat" customModuleProvider="target" id="BuS-rs-LPE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bM7-sm-KqT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="736.79999999999995" y="-432.23388305847078"/>
+            <point key="canvasLocation" x="1068" y="194.75262368815595"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="tAj-vX-af2">
@@ -157,15 +160,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qbX-Pc-ZRj">
-                                <rect key="frame" x="67" y="42" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2jn-8a-kxZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gry.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2jn-8a-kxZ">
                                 <rect key="frame" x="67" y="235" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -180,6 +175,13 @@
                                     <action selector="restartButtonPressed:" destination="TuU-zy-wpA" eventType="touchUpInside" id="OQd-hm-Ii5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have placed in Gryffindor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jya-9X-GXJ">
+                                <rect key="frame" x="16" y="20" width="343" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="58r-i2-q1c"/>
@@ -190,10 +192,146 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZM-HJ-cEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="145"/>
+            <point key="canvasLocation" x="1857" y="-289"/>
+        </scene>
+        <!--Fourth View Controller-->
+        <scene sceneID="Prb-jB-3IU">
+            <objects>
+                <viewController id="1Lu-9d-kIe" customClass="fourthViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k5A-2e-Lqm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sly.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YUZ-oW-BsQ">
+                                <rect key="frame" x="67" y="235" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NE8-1v-boj">
+                                <rect key="frame" x="134" y="427" width="107" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartButton:" destination="1Lu-9d-kIe" eventType="touchUpInside" id="0pX-9H-lB9"/>
+                                    <action selector="restartButtonPressed:" destination="1Lu-9d-kIe" eventType="touchUpInside" id="oIx-pE-Qyq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have placed in Slytherin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acz-JS-Slc">
+                                <rect key="frame" x="16" y="20" width="343" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="zON-3s-fT1"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToFirstScreen" id="sDL-tQ-Glf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ih-3O-4uh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1068" y="-682"/>
+        </scene>
+        <!--Fifth View Controller-->
+        <scene sceneID="W0Q-CP-UBz">
+            <objects>
+                <viewController id="dRv-bs-zqq" customClass="fifthViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dSn-2J-kcO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpM-bX-RlY">
+                                <rect key="frame" x="134" y="427" width="107" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartButton:" destination="dRv-bs-zqq" eventType="touchUpInside" id="k39-2R-LQv"/>
+                                    <action selector="restartButtonPressed:" destination="dRv-bs-zqq" eventType="touchUpInside" id="lYe-bQ-hVw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have placed in Hufflepuff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KD-ui-UbQ">
+                                <rect key="frame" x="16" y="20" width="343" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="huff.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="A3a-cq-7I7">
+                                <rect key="frame" x="67" y="235" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="pBQ-UO-ysw"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToFirstScreen" id="KzB-DC-1MJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIt-T0-HVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1858" y="499"/>
+        </scene>
+        <!--Sixth View Controller-->
+        <scene sceneID="ZZG-Py-Xb2">
+            <objects>
+                <viewController id="kV1-7w-d8I" customClass="sixthViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E4b-bS-jpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rav.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EVI-gh-EZj">
+                                <rect key="frame" x="67" y="235" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOf-6n-7tO">
+                                <rect key="frame" x="134" y="427" width="107" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartButton:" destination="kV1-7w-d8I" eventType="touchUpInside" id="uhF-P2-Pgd"/>
+                                    <action selector="restartButtonPressed:" destination="kV1-7w-d8I" eventType="touchUpInside" id="xLg-gc-GmD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have placed in Ravenclaw" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Z2-Ph-t1U">
+                                <rect key="frame" x="16" y="20" width="343" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="yEg-dC-aAv"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToFirstScreen" id="WN3-cZ-mFM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bVi-o3-Uj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1146" y="954"/>
         </scene>
     </scenes>
     <resources>
+        <image name="gry.jpg" width="206" height="244"/>
+        <image name="huff.jpg" width="200" height="252"/>
         <image name="kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg" width="900" height="480"/>
+        <image name="rav.jpg" width="208" height="243"/>
+        <image name="sly.jpg" width="209" height="241"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KzB-DC-1MJ"/>
+    </inferredMetricsTieBreakers>
 </document>

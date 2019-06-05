@@ -494,7 +494,25 @@ class SecondViewController: UIViewController {
     
     @IBAction func ResultsPressed(_ sender: Any) {
         
-        performSegue(withIdentifier: "goToThirdScreen", sender: self)
+        if  redScore > greenScore, redScore > yellowScore, redScore > blueScore {
+               performSegue(withIdentifier: "goToThirdScreen", sender: self)
+            
+        }
+        
+        else if greenScore > redScore, greenScore > yellowScore, greenScore > blueScore {
+             performSegue(withIdentifier: "goToFourthScreen", sender: self)
+        }
+        
+        else if blueScore > redScore, blueScore > yellowScore, blueScore > greenScore {
+            performSegue(withIdentifier: "goToSixthScreen", sender: self)
+        }
+            
+        else if yellowScore > redScore, yellowScore > greenScore, yellowScore > blueScore {
+            performSegue(withIdentifier: "goToFifthScreen", sender: self)
+        }
+        
+        
+        
         
         //if the results button is pressed it will take you to the end screen
         
