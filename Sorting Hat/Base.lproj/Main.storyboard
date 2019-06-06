@@ -142,10 +142,10 @@
                         <outlet property="redButton" destination="pYp-Ma-9Yr" id="cfH-pP-iN0"/>
                         <outlet property="resultsButton" destination="L8L-q9-roY" id="oQZ-su-wZo"/>
                         <outlet property="yellowButton" destination="Fup-1R-e3Y" id="uB4-IZ-fbX"/>
-                        <segue destination="TuU-zy-wpA" kind="show" identifier="goToThirdScreen" customClass="ThirdViewController" customModule="Sorting_Hat" customModuleProvider="target" id="CPl-XA-gE3"/>
-                        <segue destination="1Lu-9d-kIe" kind="show" identifier="goToFourthScreen" customClass="fourthViewController" customModule="Sorting_Hat" customModuleProvider="target" id="XPp-iI-EfL"/>
-                        <segue destination="dRv-bs-zqq" kind="show" identifier="goToFifthScreen" customClass="fifthViewController" customModule="Sorting_Hat" customModuleProvider="target" id="GeO-bA-9XP"/>
-                        <segue destination="kV1-7w-d8I" kind="show" identifier="goToSixthScreen" customClass="sixthViewController" customModule="Sorting_Hat" customModuleProvider="target" id="BuS-rs-LPE"/>
+                        <segue destination="TuU-zy-wpA" kind="show" identifier="goToThirdScreen" id="K2R-Au-vZC"/>
+                        <segue destination="1Lu-9d-kIe" kind="show" identifier="goToFourthScreen" id="sMF-bk-ZEF"/>
+                        <segue destination="kV1-7w-d8I" kind="show" identifier="goToSixthScreen" id="SeL-AB-1fd"/>
+                        <segue destination="dRv-bs-zqq" kind="show" identifier="goToFifthScreen" id="eg3-TQ-jwA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bM7-sm-KqT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -187,12 +187,12 @@
                         <viewLayoutGuide key="safeArea" id="58r-i2-q1c"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToFirstScreen" id="O8q-xp-SSl"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToFirstScreen" id="SIR-Ey-cvs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZM-HJ-cEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857" y="-289"/>
+            <point key="canvasLocation" x="1366" y="-620"/>
         </scene>
         <!--Fourth View Controller-->
         <scene sceneID="Prb-jB-3IU">
@@ -202,10 +202,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sly.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YUZ-oW-BsQ">
-                                <rect key="frame" x="67" y="235" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NE8-1v-boj">
                                 <rect key="frame" x="134" y="427" width="107" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -214,8 +210,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="restartButton:" destination="1Lu-9d-kIe" eventType="touchUpInside" id="0pX-9H-lB9"/>
-                                    <action selector="restartButtonPressed:" destination="1Lu-9d-kIe" eventType="touchUpInside" id="oIx-pE-Qyq"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="nbK-Zi-M8F"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have placed in Slytherin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acz-JS-Slc">
@@ -225,17 +220,18 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sly.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YUZ-oW-BsQ">
+                                <rect key="frame" x="67" y="235" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="zON-3s-fT1"/>
                     </view>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToFirstScreen" id="sDL-tQ-Glf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ih-3O-4uh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="-682"/>
+            <point key="canvasLocation" x="1228" y="989"/>
         </scene>
         <!--Fifth View Controller-->
         <scene sceneID="W0Q-CP-UBz">
@@ -253,8 +249,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="restartButton:" destination="dRv-bs-zqq" eventType="touchUpInside" id="k39-2R-LQv"/>
-                                    <action selector="restartButtonPressed:" destination="dRv-bs-zqq" eventType="touchUpInside" id="lYe-bQ-hVw"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="d38-By-WyA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have placed in Hufflepuff" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KD-ui-UbQ">
@@ -272,13 +267,10 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="pBQ-UO-ysw"/>
                     </view>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToFirstScreen" id="KzB-DC-1MJ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIt-T0-HVl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1858" y="499"/>
+            <point key="canvasLocation" x="2860" y="499"/>
         </scene>
         <!--Sixth View Controller-->
         <scene sceneID="ZZG-Py-Xb2">
@@ -300,8 +292,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="restartButton:" destination="kV1-7w-d8I" eventType="touchUpInside" id="uhF-P2-Pgd"/>
-                                    <action selector="restartButtonPressed:" destination="kV1-7w-d8I" eventType="touchUpInside" id="xLg-gc-GmD"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="7Tq-sz-k5j"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You have placed in Ravenclaw" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Z2-Ph-t1U">
@@ -315,13 +306,10 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="yEg-dC-aAv"/>
                     </view>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToFirstScreen" id="WN3-cZ-mFM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVi-o3-Uj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1146" y="954"/>
+            <point key="canvasLocation" x="2164" y="-188"/>
         </scene>
     </scenes>
     <resources>
@@ -332,6 +320,6 @@
         <image name="sly.jpg" width="209" height="241"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KzB-DC-1MJ"/>
+        <segue reference="7Tq-sz-k5j"/>
     </inferredMetricsTieBreakers>
 </document>

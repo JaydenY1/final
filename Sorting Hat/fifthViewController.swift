@@ -16,10 +16,6 @@ class fifthViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func restartButton(_ sender: UIButton) {
-        
-        performSegue(withIdentifier: "goToFirstScreen", sender: self)
-    }
-    
+ 
 
 }

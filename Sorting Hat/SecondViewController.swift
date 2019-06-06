@@ -216,7 +216,7 @@ class SecondViewController: UIViewController {
             blueButton.setTitle("\(answer7d)", for: .normal)
             
             questionIndex = questionIndex + 1
-            redScore = redScore + 1
+            redScore = redScore * 2
             
         }
         
@@ -297,7 +297,7 @@ class SecondViewController: UIViewController {
             blueButton.setTitle("\(answer7d)", for: .normal)
             
             questionIndex = questionIndex + 1
-            greenScore = greenScore + 1
+            greenScore = greenScore * 2
             
          }
             
@@ -381,7 +381,7 @@ class SecondViewController: UIViewController {
             blueButton.setTitle("\(answer7d)", for: .normal)
             
             questionIndex = questionIndex + 1
-            yellowScore = yellowScore + 1
+            yellowScore = yellowScore * 2
             
          }
             
@@ -464,7 +464,7 @@ class SecondViewController: UIViewController {
             blueButton.setTitle("\(answer7d)", for: .normal)
             
             questionIndex = questionIndex + 1
-            blueScore = blueScore + 1
+            blueScore = blueScore * 2
             
          }
             
