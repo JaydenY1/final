@@ -63,7 +63,7 @@ class SecondViewController: UIViewController {
     
     let question3 = "What is your favourite class"
     
-    let answer3a = "Defence Against the Dark Arts"
+    let answer3a = "Dark Arts"
     let answer3b = "Potions"
     let answer3c = "History of Magic"
     let answer3d = "Charms"
@@ -129,6 +129,7 @@ class SecondViewController: UIViewController {
         
         resultsButton.isHidden = true
         
+        // Will reset all the scores and show question 1 and it anwsers and the results button is hidden
         
     }
 
@@ -153,6 +154,8 @@ class SecondViewController: UIViewController {
             questionIndex = questionIndex + 1
             redScore = redScore + 1
             
+            // if button 1 is pressed and the question index is 1 it will show question 2 and its anwsers. Will increase red score by 1 and question index by 1
+            
         }
         
          else if sender.tag == 1, questionIndex == 2 {
@@ -165,6 +168,9 @@ class SecondViewController: UIViewController {
             
             questionIndex = questionIndex + 1
             redScore = redScore + 1
+            
+            // if button 1 is pressed and the question index is 2 it will show question 3 and its anwsers. Will increase red score by 1 and question index by 1
+
             
         }
         
@@ -179,6 +185,9 @@ class SecondViewController: UIViewController {
             questionIndex = questionIndex + 1
             redScore = redScore + 1
             
+            // if button 1 is pressed and the question index is 3 it will show question 4 and its anwsers. Will increase red score by 1 and question index by 1
+
+            
         }
         
          else if sender.tag == 1, questionIndex == 4 {
@@ -191,6 +200,9 @@ class SecondViewController: UIViewController {
             
             questionIndex = questionIndex + 1
             redScore = redScore + 1
+            
+            // if button 1 is pressed and the question index is 4 it will show question 5 and its anwsers. Will increase red score by 1 and question index by 1
+
             
         }
         
@@ -205,6 +217,9 @@ class SecondViewController: UIViewController {
             questionIndex = questionIndex + 1
             redScore = redScore + 1
             
+            // if button 1 is pressed and the question index is 5 it will show question 6 and its anwsers. Will increase red score by 1 and question index by 1
+
+            
         }
         
          else if sender.tag == 1, questionIndex == 6 {
@@ -216,7 +231,10 @@ class SecondViewController: UIViewController {
             blueButton.setTitle("\(answer7d)", for: .normal)
             
             questionIndex = questionIndex + 1
-            redScore = redScore * 2
+            redScore = redScore + 3
+            
+            // if button 1 is pressed and the question index is 6 it will show question 7 and its anwsers. Will increase red score by 1 and question index by 1
+
             
         }
         
@@ -234,6 +252,9 @@ class SecondViewController: UIViewController {
             questionIndex = questionIndex + 1
             greenScore = greenScore + 1
             
+            // if button 2 is pressed and the question index is 1 it will show question 2 and its anwsers. Will increase green score by 1 and question index by 1
+
+            
          }
             
          else if sender.tag == 2, questionIndex == 2 {
@@ -246,6 +267,9 @@ class SecondViewController: UIViewController {
             
             questionIndex = questionIndex + 1
             greenScore = greenScore + 1
+            
+            // if button 2 is pressed and the question index is 2 it will show question 3 and its anwsers. Will increase green score by 1 and question index by 1
+
             
          }
             
@@ -260,6 +284,9 @@ class SecondViewController: UIViewController {
             questionIndex = questionIndex + 1
             greenScore = greenScore + 1
             
+            // if button 2 is pressed and the question index is 3 it will show question 4 and its anwsers. Will increase green score by 1 and question index by 1
+
+            
          }
             
          else if sender.tag == 2, questionIndex == 4 {
@@ -272,6 +299,9 @@ class SecondViewController: UIViewController {
             
             questionIndex = questionIndex + 1
             greenScore = greenScore + 1
+            
+            // if button 2 is pressed and the question index is 4 it will show question 5 and its anwsers. Will increase green score by 1 and question index by 1
+
             
          }
             
@@ -286,6 +316,9 @@ class SecondViewController: UIViewController {
             questionIndex = questionIndex + 1
             greenScore = greenScore + 1
             
+            // if button 2 is pressed and the question index is 5 it will show question 6 and its anwsers. Will increase green score by 1 and question index by 1
+
+            
          }
             
          else if sender.tag == 2, questionIndex == 6 {
@@ -297,7 +330,10 @@ class SecondViewController: UIViewController {
             blueButton.setTitle("\(answer7d)", for: .normal)
             
             questionIndex = questionIndex + 1
-            greenScore = greenScore * 2
+            greenScore = greenScore + 3
+            
+            // if button 2 is pressed and the question index is 6 it will show question 7 and its anwsers. Will increase green score by 1 and question index by 1
+
             
          }
             
@@ -318,6 +354,9 @@ class SecondViewController: UIViewController {
             questionIndex = questionIndex + 1
             yellowScore = yellowScore + 1
             
+            // if button 2 is pressed and the question index is 1 it will show question 2 and its anwsers. Will increase yellow score by 1 and question index by 1
+
+            
          }
             
          else if sender.tag == 3, questionIndex == 2 {
@@ -330,6 +369,9 @@ class SecondViewController: UIViewController {
             
             questionIndex = questionIndex + 1
             yellowScore = yellowScore + 1
+            
+            // if button 2 is pressed and the question index is 2 it will show question 3 and its anwsers. Will increase yellow score by 1 and question index by 1
+
             
          }
             
@@ -344,6 +386,9 @@ class SecondViewController: UIViewController {
             questionIndex = questionIndex + 1
             yellowScore = yellowScore + 1
             
+            // if button 2 is pressed and the question index is 3 it will show question 4 and its anwsers. Will increase yellow score by 1 and question index by 1
+
+            
          }
             
          else if sender.tag == 3, questionIndex == 4 {
@@ -356,6 +401,9 @@ class SecondViewController: UIViewController {
             
             questionIndex = questionIndex + 1
             yellowScore = yellowScore + 1
+            
+            // if button 2 is pressed and the question index is 4 it will show question 5 and its anwsers. Will increase yellow score by 1 and question index by 1
+
             
          }
             
@@ -370,6 +418,9 @@ class SecondViewController: UIViewController {
             questionIndex = questionIndex + 1
             yellowScore = yellowScore + 1
             
+            // if button 2 is pressed and the question index is 5 it will show question 6 and its anwsers. Will increase yellow score by 1 and question index by 1
+
+            
          }
             
          else if sender.tag == 3, questionIndex == 6 {
@@ -381,7 +432,10 @@ class SecondViewController: UIViewController {
             blueButton.setTitle("\(answer7d)", for: .normal)
             
             questionIndex = questionIndex + 1
-            yellowScore = yellowScore * 2
+            yellowScore = yellowScore + 3
+            
+            // if button 2 is pressed and the question index is 6 it will show question 7 and its anwsers. Will increase yellow score by 1 and question index by 1
+
             
          }
             
@@ -401,6 +455,9 @@ class SecondViewController: UIViewController {
             questionIndex = questionIndex + 1
             blueScore = blueScore + 1
             
+            // if button 2 is pressed and the question index is 1 it will show question 2 and its anwsers. Will increase blue score by 1 and question index by 1
+
+            
          }
             
          else if sender.tag == 4, questionIndex == 2 {
@@ -413,6 +470,9 @@ class SecondViewController: UIViewController {
             
             questionIndex = questionIndex + 1
             blueScore = blueScore + 1
+            
+            // if button 2 is pressed and the question index is 2 it will show question 3 and its anwsers. Will increase blue score by 1 and question index by 1
+
             
          }
             
@@ -427,6 +487,9 @@ class SecondViewController: UIViewController {
             questionIndex = questionIndex + 1
             blueScore = blueScore + 1
             
+            // if button 2 is pressed and the question index is 3 it will show question 4 and its anwsers. Will increase blue score by 1 and question index by 1
+
+            
          }
             
          else if sender.tag == 4, questionIndex == 4 {
@@ -439,6 +502,9 @@ class SecondViewController: UIViewController {
             
             questionIndex = questionIndex + 1
             blueScore = blueScore + 1
+            
+            // if button 2 is pressed and the question index is 4 it will show question 5 and its anwsers. Will increase blue score by 1 and question index by 1
+
             
          }
             
@@ -453,6 +519,9 @@ class SecondViewController: UIViewController {
             questionIndex = questionIndex + 1
             blueScore = blueScore + 1
             
+            // if button 2 is pressed and the question index is 5 it will show question 6 and its anwsers. Will increase blue score by 1 and question index by 1
+
+            
          }
             
          else if sender.tag == 4, questionIndex == 6 {
@@ -464,7 +533,10 @@ class SecondViewController: UIViewController {
             blueButton.setTitle("\(answer7d)", for: .normal)
             
             questionIndex = questionIndex + 1
-            blueScore = blueScore * 2
+            blueScore = blueScore + 3
+            
+            // if button 2 is pressed and the question index is 6 it will show question 7 and its anwsers. Will increase blue score by 1 and question index by 1
+
             
          }
             
@@ -479,7 +551,7 @@ class SecondViewController: UIViewController {
             blueButton.isHidden = true
             resultsButton.isHidden = false
             
-            
+            // if question index is 7 hide the red, green, yellow, blue buttons and unhide the results button
             
         }
         
@@ -497,18 +569,36 @@ class SecondViewController: UIViewController {
         if  redScore > greenScore, redScore > yellowScore, redScore > blueScore {
                performSegue(withIdentifier: "goToThirdScreen", sender: self)
             
+            // if the results button is pressed and the red score is the highest it will go to the thirdscreen
+            
         }
         
         else if greenScore > redScore, greenScore > yellowScore, greenScore > blueScore {
              performSegue(withIdentifier: "goToFourthScreen", sender: self)
+            
+            // if the results button is pressed and the green score is the highest it will go to the fourthscreen
+
         }
         
         else if blueScore > redScore, blueScore > yellowScore, blueScore > greenScore {
             performSegue(withIdentifier: "goToSixthScreen", sender: self)
+            
+            // if the results button is pressed and the blue score is the highest it will go to the sixthscreen
+
         }
             
         else if yellowScore > redScore, yellowScore > greenScore, yellowScore > blueScore {
             performSegue(withIdentifier: "goToFifthScreen", sender: self)
+            
+            // if the results button is pressed and the yellow score is the highest it will go to the fifthscreen
+
+        }
+        
+        else {
+            performSegue(withIdentifier: "goToSevenScreen", sender: self)
+            
+            // if there is a tie go to sevenscreen
+            
         }
         
         

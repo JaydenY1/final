@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lat-hG-sot">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lat-hG-sot">
                                 <rect key="frame" x="67" y="214" width="240" height="239"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -38,7 +38,7 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iuj-uI-rky"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jm6-qe-ykH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="53a48ec4bc91674d28c79fad2b9fdd2c_28-collection-of-sorting-hat-harry-potter-drawing-high-quality-_340-270.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="jm6-qe-ykH">
                                 <rect key="frame" x="67" y="46" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -63,7 +63,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TBO-mv-14v">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBO-mv-14v">
                                 <rect key="frame" x="67" y="43" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -146,6 +146,7 @@
                         <segue destination="1Lu-9d-kIe" kind="show" identifier="goToFourthScreen" id="sMF-bk-ZEF"/>
                         <segue destination="kV1-7w-d8I" kind="show" identifier="goToSixthScreen" id="SeL-AB-1fd"/>
                         <segue destination="dRv-bs-zqq" kind="show" identifier="goToFifthScreen" id="eg3-TQ-jwA"/>
+                        <segue destination="00y-Te-iae" kind="show" identifier="goToSevenScreen" id="trx-32-8AK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bM7-sm-KqT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tZM-HJ-cEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366" y="-620"/>
+            <point key="canvasLocation" x="846" y="-736"/>
         </scene>
         <!--Fourth View Controller-->
         <scene sceneID="Prb-jB-3IU">
@@ -309,17 +310,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVi-o3-Uj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2164" y="-188"/>
+            <point key="canvasLocation" x="2175" y="-300"/>
+        </scene>
+        <!--Seven View Controller-->
+        <scene sceneID="eL1-mT-q8k">
+            <objects>
+                <viewController id="00y-Te-iae" customClass="sevenViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WDm-jS-Iiy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Sorting Hat was Unable to choose" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYi-ac-9bZ">
+                                <rect key="frame" x="16" y="20" width="343" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YnV-Zx-4Ad">
+                                <rect key="frame" x="134" y="427" width="107" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goToFirstScreen" id="dOH-xH-Fw0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="3Fe-Ce-dJ9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ic8-Sc-K5h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3186" y="-269"/>
         </scene>
     </scenes>
     <resources>
+        <image name="53a48ec4bc91674d28c79fad2b9fdd2c_28-collection-of-sorting-hat-harry-potter-drawing-high-quality-_340-270.jpeg" width="340" height="270"/>
         <image name="gry.jpg" width="206" height="244"/>
         <image name="huff.jpg" width="200" height="252"/>
-        <image name="kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg" width="900" height="480"/>
         <image name="rav.jpg" width="208" height="243"/>
         <image name="sly.jpg" width="209" height="241"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7Tq-sz-k5j"/>
+        <segue reference="dOH-xH-Fw0"/>
     </inferredMetricsTieBreakers>
 </document>

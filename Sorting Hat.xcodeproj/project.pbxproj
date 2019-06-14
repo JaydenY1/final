@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C7D1ABC22B419FC00524BB1 /* 53a48ec4bc91674d28c79fad2b9fdd2c_28-collection-of-sorting-hat-harry-potter-drawing-high-quality-_340-270.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6C7D1ABB22B419FC00524BB1 /* 53a48ec4bc91674d28c79fad2b9fdd2c_28-collection-of-sorting-hat-harry-potter-drawing-high-quality-_340-270.jpeg */; };
+		6C920B3F22AEDED2003CE31C /* sevenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C920B3E22AEDED2003CE31C /* sevenViewController.swift */; };
 		6C9EE8C422A05BEA00414FE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9EE8C322A05BEA00414FE0 /* AppDelegate.swift */; };
 		6C9EE8C622A05BEA00414FE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9EE8C522A05BEA00414FE0 /* ViewController.swift */; };
 		6C9EE8C922A05BEA00414FE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C9EE8C722A05BEA00414FE0 /* Main.storyboard */; };
@@ -21,10 +23,11 @@
 		6CC3ADE622A84E280079D7DF /* fourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3ADE522A84E280079D7DF /* fourthViewController.swift */; };
 		6CC3ADE822A84E370079D7DF /* fifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3ADE722A84E370079D7DF /* fifthViewController.swift */; };
 		6CC3ADEA22A84E470079D7DF /* sixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3ADE922A84E470079D7DF /* sixthViewController.swift */; };
-		6CE0F1A222A1A8270080F6A7 /* kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6CE0F1A122A1A8270080F6A7 /* kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C7D1ABB22B419FC00524BB1 /* 53a48ec4bc91674d28c79fad2b9fdd2c_28-collection-of-sorting-hat-harry-potter-drawing-high-quality-_340-270.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "53a48ec4bc91674d28c79fad2b9fdd2c_28-collection-of-sorting-hat-harry-potter-drawing-high-quality-_340-270.jpeg"; sourceTree = "<group>"; };
+		6C920B3E22AEDED2003CE31C /* sevenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sevenViewController.swift; sourceTree = "<group>"; };
 		6C9EE8C022A05BEA00414FE0 /* Sorting Hat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sorting Hat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C9EE8C322A05BEA00414FE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C9EE8C522A05BEA00414FE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +44,6 @@
 		6CC3ADE522A84E280079D7DF /* fourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourthViewController.swift; sourceTree = "<group>"; };
 		6CC3ADE722A84E370079D7DF /* fifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fifthViewController.swift; sourceTree = "<group>"; };
 		6CC3ADE922A84E470079D7DF /* sixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sixthViewController.swift; sourceTree = "<group>"; };
-		6CE0F1A122A1A8270080F6A7 /* kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,12 +84,13 @@
 				6CC3ADE522A84E280079D7DF /* fourthViewController.swift */,
 				6CC3ADE722A84E370079D7DF /* fifthViewController.swift */,
 				6CC3ADE922A84E470079D7DF /* sixthViewController.swift */,
+				6C920B3E22AEDED2003CE31C /* sevenViewController.swift */,
 				6C9EE8CA22A05BEB00414FE0 /* Assets.xcassets */,
 				6CC3ADDD22A84C430079D7DF /* huff.jpg */,
+				6C7D1ABB22B419FC00524BB1 /* 53a48ec4bc91674d28c79fad2b9fdd2c_28-collection-of-sorting-hat-harry-potter-drawing-high-quality-_340-270.jpeg */,
 				6CC3ADDF22A84C470079D7DF /* rav.jpg */,
 				6CC3ADE122A84C4B0079D7DF /* sly.jpg */,
 				6CC3ADE322A84C4F0079D7DF /* gry.jpg */,
-				6CE0F1A122A1A8270080F6A7 /* kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg */,
 				6C9EE8CC22A05BEB00414FE0 /* LaunchScreen.storyboard */,
 				6C9EE8CF22A05BEB00414FE0 /* Info.plist */,
 			);
@@ -153,8 +156,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CC3ADE422A84C4F0079D7DF /* gry.jpg in Resources */,
+				6C7D1ABC22B419FC00524BB1 /* 53a48ec4bc91674d28c79fad2b9fdd2c_28-collection-of-sorting-hat-harry-potter-drawing-high-quality-_340-270.jpeg in Resources */,
 				6CC3ADE222A84C4B0079D7DF /* sly.jpg in Resources */,
-				6CE0F1A222A1A8270080F6A7 /* kisspng-sorting-hat-harry-potter-art-helga-hufflepuff-clip-philosopher-5b13289552cd92.0864984915279822293392.jpg in Resources */,
 				6CC3ADDE22A84C440079D7DF /* huff.jpg in Resources */,
 				6C9EE8CE22A05BEB00414FE0 /* LaunchScreen.storyboard in Resources */,
 				6CC3ADE022A84C470079D7DF /* rav.jpg in Resources */,
@@ -174,6 +177,7 @@
 				6CC3ADEA22A84E470079D7DF /* sixthViewController.swift in Sources */,
 				6C9EE8D622A05F5700414FE0 /* SecondViewController.swift in Sources */,
 				6CC3ADE822A84E370079D7DF /* fifthViewController.swift in Sources */,
+				6C920B3F22AEDED2003CE31C /* sevenViewController.swift in Sources */,
 				6C9EE8C622A05BEA00414FE0 /* ViewController.swift in Sources */,
 				6C9EE8D822A0658100414FE0 /* ThirdViewController.swift in Sources */,
 				6C9EE8C422A05BEA00414FE0 /* AppDelegate.swift in Sources */,
